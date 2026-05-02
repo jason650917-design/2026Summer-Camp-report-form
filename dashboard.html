@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>逗點暑期經典營隊｜總表</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:        #f6f1e6;
+    --paper-warm:   #fdfbf5;
+    --paper-soft:   #efe7d4;
+    --ink:          #1a1d23;
+    --ink-soft:     #3a3a36;
+    --ink-muted:    #6f685c;
+    --hairline:     #cfc6b3;
+    --hairline-soft:#e2dac8;
+    --accent:       #8b3a2a;
+    --accent-soft:  #f0d9c8;
+    --gold:         #a8843e;
+    --green:        #5a7a3e;
+    --serif:        "Noto Serif TC", "Cormorant Garamond", "Times New Roman", serif;
+    --serif-en:     "Cormorant Garamond", "Noto Serif TC", serif;
+    --sans:         "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 15px;
+    padding: 24px 18px 60px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+
+  /* ─── Masthead ─────────────────────────────────────── */
+  header.masthead {
+    border-top: 4px double var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 22px 0 18px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .eyebrow {
+    font-family: var(--serif-en);
+    font-size: 12px;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .masthead h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 44px);
+    margin: 0 0 8px;
+    letter-spacing: .04em;
+  }
+  .subtitle {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-muted);
+    margin: 0;
+  }
+  .meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 14px;
+    font-family: var(--serif-en);
+    font-size: 13px;
+    letter-spacing: .15em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+  .meta a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  .meta a:hover { color: var(--accent); }
+
+  /* ─── Filter bar ─────────────────────────────────── */
+  .filter-bar {
+    background: var(--paper-warm);
+    border: 1px solid var(--hairline);
+    padding: 18px 22px;
+    margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    align-items: end;
+  }
+  .filter-bar .field { display: flex; flex-direction: column; }
+  .filter-bar label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .filter-bar input,
+  .filter-bar select {
+    font-family: var(--sans);
+    font-size: 14px;
+    background: var(--paper-warm);
+    border: none;
+    border-bottom: 1px solid var(--hairline);
+    padding: 7px 2px;
+    color: var(--ink);
+    width: 100%;
+  }
+  .filter-bar input:focus,
+  .filter-bar select:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+  }
+  .filter-bar select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%231a1d23' fill='none' stroke-width='1.2'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+    padding-right: 22px;
+  }
+  .btn-refresh {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 10px 18px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn-refresh:hover { background: var(--accent); }
+
+  /* ─── Section ─────────────────────────────────────── */
+  section.chapter {
+    background: var(--paper-warm);
+    border: 1px solid var(--hairline);
+    margin-bottom: 22px;
+    padding: 28px 32px 32px;
+  }
+  .chapter-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .chapter-title-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .chapter-num {
+    font-family: var(--serif-en);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--accent);
+    font-style: italic;
+  }
+  .chapter-title {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: .04em;
+    margin: 0;
+  }
+  .chapter-title small {
+    display: block;
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .15em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  /* ─── KPIs ─────────────────────────────────────── */
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    border-top: 1px solid var(--hairline);
+    border-left: 1px solid var(--hairline);
+  }
+  .kpi {
+    padding: 26px 22px;
+    border-right: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    background: #fff;
+    text-align: center;
+    position: relative;
+  }
+  .kpi .label {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: .15em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .kpi .value {
+    font-family: var(--serif);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -.01em;
+    line-height: 1;
+  }
+  .kpi .value .currency {
+    font-size: 18px;
+    color: var(--ink-muted);
+    margin-right: 4px;
+    font-weight: 500;
+    vertical-align: 2px;
+  }
+  .kpi .value .pct {
+    font-size: 22px;
+    color: var(--ink-muted);
+    margin-left: 2px;
+    font-weight: 500;
+  }
+  .kpi .sub {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 8px;
+    letter-spacing: .08em;
+  }
+  .kpi.accent .value { color: var(--accent); }
+
+  /* ─── Tabs (for ranking) ─────────────────────────── */
+  .tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .tab {
+    padding: 10px 18px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: var(--serif);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: var(--ink-muted);
+    cursor: pointer;
+    margin-bottom: -1px;
+  }
+  .tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    font-weight: 700;
+  }
+  .tab:hover:not(.active) { color: var(--ink); }
+
+  /* ─── Ranking table ─────────────────────────────── */
+  .rank-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .rank-table thead th {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: var(--paper-soft);
+    border-bottom: 1px solid var(--hairline);
+    padding: 12px 14px;
+    text-align: left;
+  }
+  .rank-table tbody td {
+    padding: 14px;
+    border-bottom: 1px solid var(--hairline-soft);
+    font-size: 15px;
+  }
+  .rank-table tbody tr:hover { background: var(--paper-soft); }
+  .rank-table .rank-num {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink-muted);
+    width: 60px;
+  }
+  .rank-table tbody tr:nth-child(1) .rank-num { color: var(--accent); font-size: 28px; }
+  .rank-table tbody tr:nth-child(2) .rank-num { color: var(--gold); }
+  .rank-table tbody tr:nth-child(3) .rank-num { color: var(--green); }
+  .rank-table .branch-name {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .rank-table .metric {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--ink);
+    text-align: right;
+  }
+  .rank-table .metric .currency {
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-right: 3px;
+    font-weight: 500;
+  }
+  .progress-bar {
+    background: var(--hairline-soft);
+    height: 6px;
+    width: 140px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-top: 6px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    transition: width .4s ease;
+  }
+  @media (max-width: 720px) {
+    .progress-bar { width: 100px; }
+  }
+
+  /* ─── Detail table ─────────────────────────────── */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--hairline);
+    background: #fff;
+  }
+  table.detail {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  table.detail thead th {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: var(--paper-soft);
+    border-bottom: 1px solid var(--hairline);
+    padding: 12px 14px;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 0;
+  }
+  table.detail thead th:hover { color: var(--accent); }
+  table.detail thead th.sorted-asc::after { content: " ▲"; color: var(--accent); }
+  table.detail thead th.sorted-desc::after { content: " ▼"; color: var(--accent); }
+  table.detail tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--hairline-soft);
+    color: var(--ink-soft);
+  }
+  table.detail tbody tr:hover { background: var(--paper-soft); }
+  table.detail .num {
+    font-family: var(--serif-en);
+    font-weight: 600;
+    text-align: right;
+    color: var(--ink);
+    font-size: 14px;
+  }
+
+  /* ─── Pull quote (summer summary) ─────────────────── */
+  .pull-quote {
+    text-align: center;
+    padding: 40px 24px;
+    background: linear-gradient(180deg, var(--paper-warm) 0%, #fff 100%);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    margin: 24px 0;
+  }
+  .pull-quote .grand-label {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: .25em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .pull-quote .grand-value {
+    font-family: var(--serif);
+    font-size: clamp(48px, 9vw, 84px);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    letter-spacing: -.02em;
+  }
+  .pull-quote .grand-value .currency {
+    font-size: .5em;
+    color: var(--ink-muted);
+    margin-right: 6px;
+    font-weight: 500;
+    vertical-align: 8px;
+  }
+  .pull-quote .grand-sub {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-muted);
+    margin-top: 14px;
+    letter-spacing: .08em;
+  }
+
+  /* ─── Status / loader ─────────────────────────── */
+  .loader {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--ink-muted);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 16px;
+  }
+  .loader::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--hairline);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    margin-left: 12px;
+    animation: spin 1s linear infinite;
+    vertical-align: -3px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .err-box {
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-size: 15px;
+  }
+
+  /* ─── Footer ─────────────────────────────────────── */
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid var(--hairline);
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-muted);
+    letter-spacing: .1em;
+  }
+  .btn-export {
+    background: transparent;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 8px 18px;
+    font-family: var(--serif);
+    font-size: 13px;
+    letter-spacing: .12em;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .btn-export:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  @media (max-width: 720px) {
+    body { padding: 14px 12px 40px; }
+    section.chapter { padding: 22px 18px; }
+    .chapter-num { font-size: 30px; }
+    .chapter-title { font-size: 18px; }
+    .kpi .value { font-size: 28px; }
+    .rank-table tbody td { padding: 10px 8px; font-size: 13px; }
+    .rank-table .branch-name { font-size: 15px; }
+    .rank-table .metric { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ═══ Masthead ═══════════════════════════════════ -->
+  <header class="masthead">
+    <div class="eyebrow">— Comma Summer Camp · Master Dashboard —</div>
+    <h1>暑期營運總表</h1>
+    <p class="subtitle">Branch & Camp Performance · 各分校與營隊統整</p>
+    <div class="meta">
+      <span id="updateMeta">— 更新中 —</span>
+      <span><a href="index.html">← 回填表</a></span>
+      <span><button class="btn-refresh" id="refreshBtn">重新整理</button></span>
+    </div>
+  </header>
+
+  <!-- ═══ Filters ═══════════════════════════════════ -->
+  <div class="filter-bar">
+    <div class="field">
+      <label>起始日期</label>
+      <input type="date" id="dateFrom">
+    </div>
+    <div class="field">
+      <label>結束日期</label>
+      <input type="date" id="dateTo">
+    </div>
+    <div class="field">
+      <label>分校</label>
+      <select id="filterBranch"><option value="">全部</option></select>
+    </div>
+    <div class="field">
+      <label>營隊</label>
+      <select id="filterCamp"><option value="">全部</option></select>
+    </div>
+  </div>
+
+  <!-- 暑假總計大數字 -->
+  <div class="pull-quote">
+    <div class="grand-label">— Grand Total · 累計總營業額 —</div>
+    <div class="grand-value" id="grandRevenue"><span class="currency">NT$</span>0</div>
+    <div class="grand-sub" id="grandSub">across all branches</div>
+  </div>
+
+  <!-- ═══ Section I: KPI ═══════════════════════════ -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <div class="chapter-title-wrap">
+        <span class="chapter-num">I</span>
+        <h2 class="chapter-title">關鍵指標<small>Key Indicators</small></h2>
+      </div>
+    </div>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="label">Total Heads · 累計繳費人數</div>
+        <div class="value" id="totalHeads">0</div>
+        <div class="sub" id="headsSub">paid students</div>
+      </div>
+      <div class="kpi accent">
+        <div class="label">Achievement · 整體達成率</div>
+        <div class="value" id="totalRate">0<span class="pct">%</span></div>
+        <div class="sub" id="rateSub">target vs actual</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Branches Reporting · 已回報分校</div>
+        <div class="value" id="branchCount">0 / 7</div>
+        <div class="sub" id="branchSub">branches submitted</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Camps Active · 進行中營隊</div>
+        <div class="value" id="campCount">0</div>
+        <div class="sub">camp lines running</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Section II: 分校排名 ═════════════════════ -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <div class="chapter-title-wrap">
+        <span class="chapter-num">II</span>
+        <h2 class="chapter-title">分校排名<small>Branch Ranking</small></h2>
+      </div>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-rank="revenue">營業額</button>
+      <button class="tab" data-rank="heads">繳費人數</button>
+      <button class="tab" data-rank="rate">達成率</button>
+    </div>
+    <table class="rank-table" id="rankTable">
+      <thead>
+        <tr>
+          <th>名次</th>
+          <th>分校</th>
+          <th style="text-align:right">指標</th>
+          <th>進度</th>
+        </tr>
+      </thead>
+      <tbody id="rankBody"></tbody>
+    </table>
+  </section>
+
+  <!-- ═══ Section III: 各分校 × 各營隊 暑假總結 ════════ -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <div class="chapter-title-wrap">
+        <span class="chapter-num">III</span>
+        <h2 class="chapter-title">分校 × 營隊 暑假總結<small>Summer Summary</small></h2>
+      </div>
+      <button class="btn-export" id="exportSummaryBtn">匯出 CSV</button>
+    </div>
+    <div class="table-wrap">
+      <table class="detail" id="summaryTable">
+        <thead>
+          <tr>
+            <th data-sort="分校">分校</th>
+            <th data-sort="營隊">營隊</th>
+            <th data-sort="最新目標" style="text-align:right">最新目標</th>
+            <th data-sort="最新實際" style="text-align:right">最新實際</th>
+            <th data-sort="達成率" style="text-align:right">達成率</th>
+            <th data-sort="總繳費人數" style="text-align:right">繳費人數</th>
+            <th data-sort="總營業額" style="text-align:right">總營業額</th>
+          </tr>
+        </thead>
+        <tbody id="summaryBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══ Section IV: 每日明細 ═══════════════════════ -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <div class="chapter-title-wrap">
+        <span class="chapter-num">IV</span>
+        <h2 class="chapter-title">每日營隊明細<small>Daily Detail</small></h2>
+      </div>
+      <button class="btn-export" id="exportDailyBtn">匯出 CSV</button>
+    </div>
+    <div id="dailyContainer">
+      <div class="loader">資料載入中</div>
+    </div>
+  </section>
+
+  <div class="footer">
+    Data via Google Apps Script · refresh on demand · Comma Summer Camp 2026
+  </div>
+
+</div>
+
+<script>
+/* ============================================================
+ *  ⚙️ CONFIG
+ * ============================================================ */
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKLhFE5vEvjx_NkiiR8D2VgbBq6xYGLhnfu-zxBgKWA8psR8JBCR0dz7vzoBkb9WOo/exec";
+
+const BRANCHES = ["極光校", "展翅校", "翱翔校", "知行校", "晨光校", "森耀校", "騰雲校"];
+const CAMPS = [
+  "一年級｜五學STREAM",
+  "二年級｜七感SEL",
+  "三年級｜環遊世界",
+  "四年級｜皇家菁英",
+  "五年級｜CEO未來領袖",
+  "六年級｜AI翻轉"
+];
+
+/* ============================================================
+ *  資料儲存
+ * ============================================================ */
+let DATA = { daily: [], charges: [], summary: [] };
+let currentRankMode = "revenue";
+let currentSort = { col: "總營業額", dir: "desc" };
+
+const $ = id => document.getElementById(id);
+const fmt = n => "NT$" + (Number(n) || 0).toLocaleString();
+
+/* ============================================================
+ *  Init
+ * ============================================================ */
+function init() {
+  // Filter dropdowns
+  $("filterBranch").innerHTML = '<option value="">全部</option>' +
+    BRANCHES.map(b => `<option>${b}</option>`).join("");
+  $("filterCamp").innerHTML = '<option value="">全部</option>' +
+    CAMPS.map(c => `<option>${c}</option>`).join("");
+
+  // Listeners
+  ["dateFrom","dateTo","filterBranch","filterCamp"].forEach(id =>
+    $(id).addEventListener("change", render)
+  );
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      currentRankMode = tab.dataset.rank;
+      renderRanking();
+    });
+  });
+  document.querySelectorAll("#summaryTable thead th").forEach(th => {
+    th.addEventListener("click", () => {
+      const col = th.dataset.sort;
+      if (!col) return;
+      if (currentSort.col === col) {
+        currentSort.dir = currentSort.dir === "asc" ? "desc" : "asc";
+      } else {
+        currentSort.col = col;
+        currentSort.dir = "desc";
+      }
+      renderSummary();
+    });
+  });
+  $("refreshBtn").addEventListener("click", load);
+  $("exportSummaryBtn").addEventListener("click", () => exportCsv("summary"));
+  $("exportDailyBtn").addEventListener("click", () => exportCsv("daily"));
+
+  load();
+}
+
+/* ============================================================
+ *  Fetch
+ * ============================================================ */
+async function load() {
+  $("updateMeta").textContent = "— 更新中 —";
+  $("dailyContainer").innerHTML = '<div class="loader">資料載入中</div>';
+  try {
+    const res = await fetch(SCRIPT_URL + "?action=all", { method: "GET" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    DATA.daily = data.daily || [];
+    DATA.charges = data.charges || [];
+    DATA.summary = data.summary || [];
+    const now = new Date();
+    $("updateMeta").textContent = "Updated · " +
+      now.toLocaleString("zh-TW", { hour: "2-digit", minute: "2-digit", month: "numeric", day: "numeric" });
+    render();
+  } catch (e) {
+    $("updateMeta").textContent = "— 載入失敗 —";
+    $("dailyContainer").innerHTML = `<div class="err-box">無法載入資料：${e.message}<br><br>請確認 Apps Script 已部署為 Web App，且 SCRIPT_URL 正確。</div>`;
+    console.error(e);
+  }
+}
+
+/* ============================================================
+ *  Filter
+ * ============================================================ */
+function applyFilters(rows, dateField = "日期") {
+  const from = $("dateFrom").value;
+  const to = $("dateTo").value;
+  const branch = $("filterBranch").value;
+  const camp = $("filterCamp").value;
+  return rows.filter(r => {
+    const d = String(r[dateField] || r["繳費日期"] || "");
+    if (from && d < from) return false;
+    if (to && d > to) return false;
+    if (branch && r["分校"] !== branch) return false;
+    if (camp && r["營隊"] !== camp) return false;
+    return true;
+  });
+}
+
+/* ============================================================
+ *  Render
+ * ============================================================ */
+function render() {
+  renderKPIs();
+  renderRanking();
+  renderSummary();
+  renderDaily();
+}
+
+function renderKPIs() {
+  const charges = applyFilters(DATA.charges, "繳費日期");
+  const daily = applyFilters(DATA.daily);
+
+  // 總營業額
+  const totalRev = charges.reduce((s, c) => s + (Number(c["小計"]) || 0), 0);
+  $("grandRevenue").innerHTML = `<span class="currency">NT$</span>${totalRev.toLocaleString()}`;
+  const fb = $("filterBranch").value;
+  const fc = $("filterCamp").value;
+  let scope = "across all branches";
+  if (fb && fc) scope = `${fb} · ${fc}`;
+  else if (fb) scope = fb;
+  else if (fc) scope = fc;
+  $("grandSub").textContent = scope;
+
+  // 總人數
+  const totalHeads = charges.reduce((s, c) => s + (Number(c["人數"]) || 0), 0);
+  $("totalHeads").textContent = totalHeads.toLocaleString();
+  $("headsSub").textContent = `${charges.length} 筆繳費紀錄`;
+
+  // 整體達成率：取每個 (分校+營隊) 的最新一筆
+  const latest = {};
+  daily.forEach(d => {
+    const k = `${d["分校"]}|${d["營隊"]}`;
+    if (!latest[k] || d["日期"] > latest[k]["日期"]) latest[k] = d;
+  });
+  let sumTarget = 0, sumActual = 0;
+  Object.values(latest).forEach(d => {
+    sumTarget += Number(d["目標累計"]) || 0;
+    sumActual += Number(d["實際累計"]) || 0;
+  });
+  const rate = sumTarget > 0 ? Math.round(sumActual / sumTarget * 100) : 0;
+  $("totalRate").innerHTML = `${rate}<span class="pct">%</span>`;
+  $("rateSub").textContent = `目標 ${sumTarget.toLocaleString()} ／ 實際 ${sumActual.toLocaleString()}`;
+
+  // 已回報分校數
+  const reportedBranches = new Set(daily.map(d => d["分校"])).size;
+  $("branchCount").textContent = `${reportedBranches} / 7`;
+  $("branchSub").textContent = reportedBranches === 7 ? "all branches in" : `${7 - reportedBranches} pending`;
+
+  // 進行中營隊
+  $("campCount").textContent = Object.keys(latest).length;
+}
+
+function renderRanking() {
+  const charges = applyFilters(DATA.charges, "繳費日期");
+  const daily = applyFilters(DATA.daily);
+
+  // 按分校彙總
+  const byBranch = {};
+  BRANCHES.forEach(b => byBranch[b] = { branch: b, revenue: 0, heads: 0, target: 0, actual: 0 });
+
+  charges.forEach(c => {
+    if (!byBranch[c["分校"]]) byBranch[c["分校"]] = { branch: c["分校"], revenue: 0, heads: 0, target: 0, actual: 0 };
+    byBranch[c["分校"]].revenue += Number(c["小計"]) || 0;
+    byBranch[c["分校"]].heads += Number(c["人數"]) || 0;
+  });
+
+  // target/actual 取每個 (分校+營隊) 的最新
+  const latest = {};
+  daily.forEach(d => {
+    const k = `${d["分校"]}|${d["營隊"]}`;
+    if (!latest[k] || d["日期"] > latest[k]["日期"]) latest[k] = d;
+  });
+  Object.values(latest).forEach(d => {
+    if (!byBranch[d["分校"]]) byBranch[d["分校"]] = { branch: d["分校"], revenue: 0, heads: 0, target: 0, actual: 0 };
+    byBranch[d["分校"]].target += Number(d["目標累計"]) || 0;
+    byBranch[d["分校"]].actual += Number(d["實際累計"]) || 0;
+  });
+
+  let arr = Object.values(byBranch);
+  arr.forEach(x => x.rate = x.target > 0 ? x.actual / x.target : 0);
+
+  // 排序
+  if (currentRankMode === "revenue") arr.sort((a, b) => b.revenue - a.revenue);
+  else if (currentRankMode === "heads") arr.sort((a, b) => b.heads - a.heads);
+  else arr.sort((a, b) => b.rate - a.rate);
+
+  const max = arr[0] ? (currentRankMode === "revenue" ? arr[0].revenue : currentRankMode === "heads" ? arr[0].heads : Math.max(arr[0].rate, 1)) : 1;
+
+  $("rankBody").innerHTML = arr.map((x, i) => {
+    let metric, pct;
+    if (currentRankMode === "revenue") {
+      metric = `<span class="currency">NT$</span>${x.revenue.toLocaleString()}`;
+      pct = max > 0 ? (x.revenue / max * 100) : 0;
+    } else if (currentRankMode === "heads") {
+      metric = x.heads.toLocaleString() + " 人";
+      pct = max > 0 ? (x.heads / max * 100) : 0;
+    } else {
+      metric = (Math.round(x.rate * 1000) / 10) + " %";
+      pct = Math.min(x.rate * 100, 100);
+    }
+    return `
+      <tr>
+        <td class="rank-num">${String(i + 1).padStart(2, "0")}</td>
+        <td><div class="branch-name">${x.branch}</div></td>
+        <td class="metric">${metric}</td>
+        <td><div class="progress-bar"><div class="progress-bar-fill" style="width:${pct}%"></div></div></td>
+      </tr>
+    `;
+  }).join("");
+}
+
+function renderSummary() {
+  const charges = applyFilters(DATA.charges, "繳費日期");
+  const daily = applyFilters(DATA.daily);
+
+  // 按 (分校, 營隊) 彙總
+  const map = {};
+  charges.forEach(c => {
+    const key = `${c["分校"]}|${c["營隊"]}`;
+    if (!map[key]) map[key] = { 分校: c["分校"], 營隊: c["營隊"], 最新目標: 0, 最新實際: 0, 達成率: 0, 總繳費人數: 0, 總營業額: 0 };
+    map[key].總繳費人數 += Number(c["人數"]) || 0;
+    map[key].總營業額 += Number(c["小計"]) || 0;
+  });
+
+  const latest = {};
+  daily.forEach(d => {
+    const k = `${d["分校"]}|${d["營隊"]}`;
+    if (!latest[k] || d["日期"] > latest[k]["日期"]) latest[k] = d;
+  });
+  Object.values(latest).forEach(d => {
+    const key = `${d["分校"]}|${d["營隊"]}`;
+    if (!map[key]) map[key] = { 分校: d["分校"], 營隊: d["營隊"], 最新目標: 0, 最新實際: 0, 達成率: 0, 總繳費人數: 0, 總營業額: 0 };
+    map[key].最新目標 = Number(d["目標累計"]) || 0;
+    map[key].最新實際 = Number(d["實際累計"]) || 0;
+    map[key].達成率 = map[key].最新目標 > 0 ? map[key].最新實際 / map[key].最新目標 : 0;
+  });
+
+  let arr = Object.values(map);
+
+  // 排序
+  arr.sort((a, b) => {
+    let av = a[currentSort.col] ?? "";
+    let bv = b[currentSort.col] ?? "";
+    if (typeof av === "number" || typeof bv === "number") {
+      return currentSort.dir === "asc" ? av - bv : bv - av;
+    }
+    return currentSort.dir === "asc"
+      ? String(av).localeCompare(String(bv), "zh-Hant")
+      : String(bv).localeCompare(String(av), "zh-Hant");
+  });
+
+  // 標頭排序樣式
+  document.querySelectorAll("#summaryTable thead th").forEach(th => {
+    th.classList.remove("sorted-asc", "sorted-desc");
+    if (th.dataset.sort === currentSort.col) {
+      th.classList.add(currentSort.dir === "asc" ? "sorted-asc" : "sorted-desc");
+    }
+  });
+
+  if (!arr.length) {
+    $("summaryBody").innerHTML = `<tr><td colspan="7" style="text-align:center;color:var(--ink-muted);padding:30px;font-style:italic;">尚無資料</td></tr>`;
+    return;
+  }
+
+  $("summaryBody").innerHTML = arr.map(x => `
+    <tr>
+      <td>${x.分校}</td>
+      <td>${x.營隊}</td>
+      <td class="num">${(x.最新目標 || 0).toLocaleString()}</td>
+      <td class="num">${(x.最新實際 || 0).toLocaleString()}</td>
+      <td class="num">${(Math.round(x.達成率 * 1000) / 10).toFixed(1)}%</td>
+      <td class="num">${(x.總繳費人數 || 0).toLocaleString()}</td>
+      <td class="num">${fmt(x.總營業額)}</td>
+    </tr>
+  `).join("");
+}
+
+function renderDaily() {
+  const daily = applyFilters(DATA.daily);
+  if (!daily.length) {
+    $("dailyContainer").innerHTML = `<div class="err-box" style="font-style:italic;color:var(--ink-muted);">— 篩選範圍內尚無資料 —</div>`;
+    return;
+  }
+  // 按日期降序
+  const sorted = [...daily].sort((a, b) => String(b["日期"]).localeCompare(String(a["日期"])));
+
+  $("dailyContainer").innerHTML = `
+    <div class="table-wrap">
+      <table class="detail">
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>分校</th>
+            <th>營隊</th>
+            <th>週次</th>
+            <th style="text-align:right">目標</th>
+            <th style="text-align:right">實際</th>
+            <th style="text-align:right">本日新增</th>
+            <th style="text-align:right">達成率</th>
+            <th>摘要</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${sorted.map(d => {
+            const target = Number(d["目標累計"]) || 0;
+            const actual = Number(d["實際累計"]) || 0;
+            const rate = target > 0 ? Math.round(actual / target * 1000) / 10 : 0;
+            return `
+              <tr>
+                <td>${d["日期"] || ""}</td>
+                <td>${d["分校"] || ""}</td>
+                <td>${d["營隊"] || ""}</td>
+                <td>${d["週次"] || ""}</td>
+                <td class="num">${target.toLocaleString()}</td>
+                <td class="num">${actual.toLocaleString()}</td>
+                <td class="num">${(Number(d["本日新增"]) || 0).toLocaleString()}</td>
+                <td class="num">${rate.toFixed(1)}%</td>
+                <td style="max-width:280px;font-size:12px;color:var(--ink-muted);">${(d["摘要"] || "").substring(0, 60)}${(d["摘要"] || "").length > 60 ? "…" : ""}</td>
+              </tr>
+            `;
+          }).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+/* ============================================================
+ *  Export
+ * ============================================================ */
+function exportCsv(type) {
+  let rows, filename;
+  if (type === "summary") {
+    const charges = applyFilters(DATA.charges, "繳費日期");
+    const daily = applyFilters(DATA.daily);
+    const map = {};
+    charges.forEach(c => {
+      const k = `${c["分校"]}|${c["營隊"]}`;
+      if (!map[k]) map[k] = { 分校: c["分校"], 營隊: c["營隊"], 最新目標: 0, 最新實際: 0, 達成率: 0, 總繳費人數: 0, 總營業額: 0 };
+      map[k].總繳費人數 += Number(c["人數"]) || 0;
+      map[k].總營業額 += Number(c["小計"]) || 0;
+    });
+    const latest = {};
+    daily.forEach(d => {
+      const k = `${d["分校"]}|${d["營隊"]}`;
+      if (!latest[k] || d["日期"] > latest[k]["日期"]) latest[k] = d;
+    });
+    Object.values(latest).forEach(d => {
+      const k = `${d["分校"]}|${d["營隊"]}`;
+      if (!map[k]) map[k] = { 分校: d["分校"], 營隊: d["營隊"], 最新目標: 0, 最新實際: 0, 達成率: 0, 總繳費人數: 0, 總營業額: 0 };
+      map[k].最新目標 = Number(d["目標累計"]) || 0;
+      map[k].最新實際 = Number(d["實際累計"]) || 0;
+      map[k].達成率 = map[k].最新目標 > 0 ? (map[k].最新實際 / map[k].最新目標) : 0;
+    });
+    rows = Object.values(map).map(x => ({
+      分校: x.分校, 營隊: x.營隊,
+      最新目標: x.最新目標, 最新實際: x.最新實際,
+      達成率: (Math.round(x.達成率 * 1000) / 10).toFixed(1) + "%",
+      總繳費人數: x.總繳費人數, 總營業額: x.總營業額
+    }));
+    filename = "暑假總結_summary.csv";
+  } else {
+    rows = applyFilters(DATA.daily);
+    filename = "每日明細_daily.csv";
+  }
+  if (!rows.length) { alert("沒有資料可匯出"); return; }
+  const cols = Object.keys(rows[0]);
+  const csv = "\uFEFF" + [
+    cols.join(","),
+    ...rows.map(r => cols.map(c => `"${String(r[c] ?? "").replace(/"/g, '""')}"`).join(","))
+  ].join("\n");
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+}
+
+init();
+</script>
+</body>
+</html>
